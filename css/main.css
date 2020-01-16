@@ -1,0 +1,395 @@
+/*  폰트 적용 */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* 커스텀 */
+
+.con {
+    width:100%;
+}
+
+.con-min-width {
+    min-width:320px;
+}
+
+.con-max-width {
+    max-width:1920px;
+}
+
+html, body {
+    overflow-x:hidden;
+}
+
+.con > .top-bar {
+    position:fixed;
+    width:100%;
+    z-index:10;
+}
+
+.con > .top-bar > .logo-box {
+    background-color: black;
+}
+
+.con > .top-bar > .logo-box > .img-box > img {
+    width:225px;
+    display:block;
+    margin:0 auto;
+}
+
+.con > .top-bar > .logo-box > .menu-trigger {
+    display: none;
+}
+
+.con > .top-bar > .menu-bar {
+    background-color:rgba(0,0,0,0.8);
+    display: block;
+}
+
+.con > .top-bar > .menu-bar > ul > li > a {
+    font-size:0.88rem;
+    color:white;
+    padding:9px;
+    display:block;
+    user-select:none;
+    text-align:center;
+}
+
+.con > .top-bar > .menu-bar > ul > li > a:hover {
+    color:lightgray;
+}
+
+
+.con > .top-bar > .menu-bar > ul > li {
+    width:calc(100% / 6);
+}
+
+.con > .top-bar > .menu-bar > ul {
+    width:850px;
+    margin:0 auto;
+}
+
+.con > .main_slide > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item {
+    width:100%;
+    display: block;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:100%;
+    white-space: nowrap;
+}
+
+
+.main_slide > .owl-carousel > .owl-nav {
+    display: none;
+}
+
+.main_slide > .owl-carousel > .owl-dots {
+    position: absolute;
+    top:63%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.main_slide > .owl-carousel > .owl-dots > .owl-dot > span {
+    margin:0 2px;
+    border: 2px solid white;
+    background-color: inherit;
+    opacity: 0.7;
+}
+
+.main_slide > .owl-carousel > .owl-dots > .owl-dot.active > span {
+    background-color: white;
+}
+
+.con > .main_slide > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > #wrap {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-13%) translateY(-10%);
+}
+
+.con > .main_slide > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .txt-box {
+    position : absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.con > .main_slide > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .txt-box > .box-text1{
+    font-size: 80px;
+    color:white;
+    font-weight: bolder;
+}
+
+.con > .main_slide > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .txt-box > .box-text2 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.con > .main_slide > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .txt-box > .box-text2 > a{
+    font-size: 15px;
+    background-color:black;
+    opacity: 0.9;
+    padding:2px 5px;
+    cursor:pointer;
+    color:white;
+    display: inline-block;
+}
+
+.con > .sub_page {
+    width:100%;
+}
+
+.con > .sub_page > .gotoshop {
+    padding:5%;
+}
+
+.con > .sub_page > .gotoshop > .row > .cell {
+    width:25%;
+    padding:3%;
+    cursor: pointer;
+    position: relative;
+}
+
+.con > .sub_page > .gotoshop > .row > .cell > img {
+    filter: brightness(100%);
+    transition: filter .3s;
+}
+
+.con > .sub_page > .gotoshop > .row > .cell:hover > img {
+    filter: brightness(40%);
+}
+
+.con > .sub_page > .gotoshop > .row > .cell > span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:white;
+    border:2px solid white;
+    border-radius:3px;
+    padding:1% 3%;
+    transform:translateX(-50%) translateY(-50%);
+    opacity:0;
+    transition: opacity .3s;
+}
+
+.con > .sub_page > .gotoshop > .row > .cell:hover > span {
+    opacity:1;
+}
+
+.con > .sub_page > .go_instagram {
+    position: relative;
+    left:0;
+    width:100%;
+    background-color: rgba(0,0,0,0.5);
+    padding:5%;
+    box-sizing: border-box;
+}
+
+.con > .sub_page > .go_instagram > .row > .cell {
+    width:calc(100% / 6);
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.con > .sub_page > .go_instagram > .row > .cell > span {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: none;
+}
+
+.con > .sub_page > .go_instagram > .row > .cell:hover span {
+    display: block;
+}
+
+
+.con > .sub_page > .go_instagram > .row > .cell:hover::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.con > .sub_page > .go_instagram > .pop-up {
+    position: fixed;
+    top:50%;
+    left:50%;
+    background-color: rgba(255,255,255, 1);
+    width:500px;
+    height: 600px;
+    transform: translateX(-50%) translateY(-50%);
+    border: 15px solid #DEDEE5;
+    z-index: 3;
+    display: none;
+}
+
+.con > .sub_page > .go_instagram > .pop-up > i {
+    position: absolute;
+    top:0;
+    right:0;
+    left:auto;
+    transform: translateX(-50%) translateY(20%);
+    color:#DEDEE5;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.con > .sub_page > .go_instagram > .pop-up > img {
+    width:100%;
+}
+
+.con > .sub_page > .go_instagram > .pop-up > .caption {
+    padding:10px;
+    width:95%;
+    font-size: 0.9rem;
+    color:gray;
+}
+
+.con > .sub_page > .go_instagram > .pop-up-bg {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    z-index: 2;
+}
+
+.bottom_slider {
+    width:100%;
+    height:100%;
+}
+
+.slideshow-container > .mySlides {
+    display: none;
+}
+
+.slideshow-container > .mySlides > img {
+    vertical-align: middle;
+}
+
+.con > .sub_page > .bottom_slider {
+    width:100%;
+    height:auto;
+    background-color: white;
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Next & previous buttons */
+.slideshow-container .prev, .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slideshow-container .prev:hover, .slideshow-container .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 3rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+footer {
+    background-color: black;
+    color:white;
+    padding:20px 300px;
+    display: block;
+    position: relative;
+
+}
+
+footer > .information ul > li {
+    font-size: 0.88rem;
+    margin:2px 8px;
+}
+
+footer > .information ul > li:not(:last-child)::after {
+    content: "｜";
+    position: absolute;
+    opacity: 0.5;
+}
+
+
+footer > .sns {
+    position: absolute;
+    right:15%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+footer > .sns > ul > .sns_icon {
+    padding:5px;
+}

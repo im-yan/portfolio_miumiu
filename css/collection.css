@@ -1,0 +1,190 @@
+/*  폰트 적용 */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* 커스텀 */
+
+.con {
+    width:100%;
+}
+
+.con-min-width {
+    min-width:320px;
+}
+
+.con-max-width {
+    max-width:1920px;
+}
+
+html, body {
+    overflow-x:hidden;
+}
+
+
+
+/* top-bar & menu-bar */
+
+
+.con > .top-bar {
+    position: fixed;;
+    width:100%;
+    z-index:10;
+    top:0;
+}
+
+.con > .top-bar > .logo-box {
+    background-color: black;
+}
+
+.con > .top-bar > .logo-box > .img-box > img {
+    width:225px;
+    display:block;
+    margin:0 auto;
+}
+
+.con > .top-bar > .logo-box > .menu-trigger {
+    display: none;
+}
+
+.con > .top-bar > .menu-bar {
+    background-color:rgba(0,0,0,0.8);
+    display: block;
+}
+
+.con > .top-bar > .menu-bar > ul > li > a {
+    font-size:0.88rem;
+    color:white;
+    padding:9px;
+    display:block;
+    user-select:none;
+    text-align:center;
+}
+
+.con > .top-bar > .menu-bar > ul > li > a:hover {
+    color:lightgray;
+}
+
+
+.con > .top-bar > .menu-bar > ul > li {
+    width:calc(100% / 6);
+}
+
+.con > .top-bar > .menu-bar > ul {
+    width:850px;
+    margin:0 auto;
+}
+
+body {
+    padding-top: 95.25px;
+}
+
+/* 컬렉션 설명 */
+
+.con > .bg_image > img{
+    display: block;
+    height:100vh;
+    position: relative;
+    width:60%;
+    opacity: 0.4;
+}
+
+.con > .bg_image > h1 {
+    position: absolute;
+    top:15%;
+    font-size: 4rem;
+    left:5%;
+    color:white;
+    text-shadow: 3px 3px 10px gray;
+    user-select: none;
+}
+
+.con > .bg_image > .bg_text {
+    position: absolute;
+    top:30%;
+    left:4%;
+    width:50%;
+    font-weight: bold;
+    color:rgb(85, 57, 53);
+    user-select: none;
+    word-break: break-all;
+}
+
+/* swiper */
+.swiper-container {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top:95.25px;
+    right:0;
+  }
+  .swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .swiper-pagination > .swiper-pagination-bullet-active {
+      background-color:white;
+      opacity: 0.2;
+  }
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    color: white;
+    opacity:0.6;
+    font-weight: bolder;
+  }
+
+  /*footer*/
+
+  
+footer {
+    background-color: black;
+    color:white;
+    padding:20px 300px;
+    display: block;
+    position: relative;
+
+}
+
+footer > .information ul > li {
+    font-size: 0.88rem;
+    margin:2px 8px;
+}
+
+footer > .information ul > li:not(:last-child)::after {
+    content: "｜";
+    position: absolute;
+    opacity: 0.5;
+}
+
+
+footer > .sns {
+    position: absolute;
+    right:15%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+footer > .sns > ul > .sns_icon {
+    padding:5px;
+}
+
+details {
+    display:none;
+}
