@@ -116,7 +116,7 @@
 	/*box3*/
 	var swiper = new Swiper('.second', {
 		slidesPerView: 1,
-		spaceBetween: 30,
+		spaceBetween: 150,
 		loop: true,
 		pagination: {
 			el: '.swiper-pagination',
