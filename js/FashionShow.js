@@ -34,54 +34,54 @@
 		}
 	});
 
-		/*scroll event*/
-		$('.con>.sub-bar>ul>.box1>a').click(function () {
+	/*scroll event*/
+	$('.con>.sub-bar>ul>.box1>a').click(function () {
 
-			var offset = $('#box1').offset();
-	
-			$('html').animate({
-				scrollTop: offset.top
-			}, 300);
-	
-		});
-	
-		$('.con>.sub-bar>ul>.box2>a').click(function () {
-	
-			var offset = $('#box2').offset();
-	
-			$('html').animate({
-				scrollTop: offset.top
-			}, 300);
-	
-		});
-		$('.con>.sub-bar>ul>.box3>a').click(function () {
-	
-			var offset = $('#box3').offset();
-	
-			$('html').animate({
-				scrollTop: offset.top
-			}, 300);
-	
-		});
-		$('.con>.sub-bar>ul>.box4>a').click(function () {
-	
-			var offset = $('#box4').offset();
-	
-			$('html').animate({
-				scrollTop: offset.top
-			}, 300);
-	
-		});
-		$('.con>.sub-bar>ul>.box5>a').click(function () {
-	
-			var offset = $('#box5').offset();
-	
-			$('html').animate({
-				scrollTop: offset.top
-			}, 300);
-	
-		});
-	
+		var offset = $('#box1').offset();
+
+		$('html').animate({
+			scrollTop: offset.top
+		}, 300);
+
+	});
+
+	$('.con>.sub-bar>ul>.box2>a').click(function () {
+
+		var offset = $('#box2').offset();
+
+		$('html').animate({
+			scrollTop: offset.top
+		}, 300);
+
+	});
+	$('.con>.sub-bar>ul>.box3>a').click(function () {
+
+		var offset = $('#box3').offset();
+
+		$('html').animate({
+			scrollTop: offset.top
+		}, 300);
+
+	});
+	$('.con>.sub-bar>ul>.box4>a').click(function () {
+
+		var offset = $('#box4').offset();
+
+		$('html').animate({
+			scrollTop: offset.top
+		}, 300);
+
+	});
+	$('.con>.sub-bar>ul>.box5>a').click(function () {
+
+		var offset = $('#box5').offset();
+
+		$('html').animate({
+			scrollTop: offset.top
+		}, 300);
+
+	});
+
 
 	/*비디오페이지*/
 	$('#wrap > #box1 > .bg_video > .text-box').css('transform', 'translateY(-50%)');
@@ -152,5 +152,17 @@
 	$('#box5>.box5_popup>.swiper-container>span').click(function () {
 		$('#box5>.box5_popup').css('display', 'none');
 	})
+
+
+	$('.menu-trigger').click(function () {
+		$(this).toggleClass('active');
+		if ($('.con>.top-bar>.logo-box>a').hasClass('active')) {
+			$('.con>.top-bar>.menu-bar').css('display', 'block');
+		} else {
+			$('.con>.top-bar>.menu-bar').css('display', 'none');
+		}
+		event.preventDefault();
+		event.stopPropagation();
+	});
 
 })
