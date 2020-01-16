@@ -67,80 +67,9 @@
         margin-right: 50px;
     }
 
-    #box3 .swiper-button-prev,
-    #box3 .swiper-button-next {
-        color: black;
-        padding: 0 10%;
-    }
-
-    #box3 .swiper-pagination-bullet-active {
-        background: gray;
-    }
-
-    /*box4*/
-    #box4 {
-        background-color: white;
-    }
-
-    #box4 .swiper-container {
-        width: 100%;
-        height: 100%;
-    }
-
-    #box4 .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        overflow: hidden;
-    }
-
-    #box4 .swiper-pagination-fraction,
-    .swiper-pagination-custom,
-    .swiper-container-horizontal>.swiper-pagination-bullets {
-        bottom: 70px;
-    }
-
-    #box4 .swiper-pagination-bullet-active {
-        opacity: 0.6;
-        background: black;
-    }
-
     /*box5*/
     #box5 {
         background-color: none;
-    }
-
-    #box5>.background_img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-    }
-
-    #box5>.background_img::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        content: "";
     }
 
     #box5>.box5_textBox {
@@ -148,8 +77,8 @@
         top: 13%;
         left: 50%;
         transform: translateX(-50%);
-        width: 50%;
-        height: 300px;
+        width: 80%;
+        height: 200px;
         position: absolute;
         text-align: justify;
     }
